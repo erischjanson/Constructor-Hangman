@@ -39,7 +39,16 @@ function Word(word){
 
 
 var randomNumber = Math.floor(Math.random()*wordChoices.length);
-console.log(randomNumber);
+var newWord = new Word(wordChoices[randomNumber]);
+console.log("TESTING NEW WORD FOR REAL: " , newWord.word);
+console.log("NEW WORD: " , newWord);
+console.log("THIS.WORD: " , newWord.word);
+
+newWord.splitWord();
+console.log("WORD ARRAY AFTER ", newWord.wordArray);
+
+console.log(newWord.wordArray);
+
 
 // var testingRandomNumber = wordChoices[randomNumber];
 // console.log("RANDOM WORD: " , testingRandomNumber);
@@ -50,15 +59,7 @@ console.log(randomNumber);
 	// 	console.log("TESTING NEW WORD: " , newWord);
 
 	// }
-var newWord = new Word(wordChoices[randomNumber]);
-console.log("TESTING NEW WORD FOR REAL: " , newWord.word);
-console.log("NEW WORD: " , newWord);
-console.log("THIS.WORD: " , newWord.word);
 
-newWord.splitWord();
-console.log("WORD ARRAY AFTER ", newWord.wordArray);
-
-console.log(newWord.wordArray);
 
 
 
